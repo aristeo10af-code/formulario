@@ -1,0 +1,136 @@
+:root {
+    --primary-gray: blue;
+    --secondary-brown: rgb(45, 195, 255);
+    --accent-green: #8c9c7a;
+    --bg-light: white;
+    --delete-red: #e74c3c;
+}
+
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--bg-light);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh; 
+    overflow: hidden; 
+}
+
+.main-container {
+    background: white;
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column; 
+    overflow: hidden; 
+}
+
+
+header {
+    background-color: var(--primary-gray);
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 25px;
+    background: white;
+    border-bottom: 1px solid white;
+    flex-shrink: 0; 
+}
+
+.inputs {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    min-width: 300px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+input:focus { border-color: var(--primary-gray); }
+
+.btn-primary {
+    background-color: var(--accent-green);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover { background-color: #728263; }
+
+
+.table-wrapper { 
+    padding: 20px; 
+    flex-grow: 1; 
+    overflow-y: auto; 
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th {
+    background-color: var(--secondary-brown);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    position: sticky; 
+    top: 0;
+}
+
+.data-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.btn-delete {
+    background: var(--delete-red);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+footer {
+    background: black;
+    padding: 20px;
+    border-top: 4px solid var(--primary-gray);
+    color: green;
+    flex-shrink: 0; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.85rem;
+    flex-wrap: wrap;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}

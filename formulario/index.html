@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Inventario Académico - ITSZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <header>
+            <h1>ITSZ Campus Nogales Ver.</h1>
+        </header>
+
+        <section class="form-container">
+            <div class="inputs">
+                <input type="text" id="nombre" placeholder="Nombre del Alumno">
+                <input type="text" id="matricula" placeholder="Matrícula">
+                <input type="text" id="notas" placeholder="Notas (ej: 8, 9, 10)">
+            </div>
+            <button id="btnRegistrar" class="btn-primary">Registrar</button>
+        </section>
+
+        <div class="table-wrapper">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Matrícula</th>
+                        <th>Promedio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaCuerpo">
+                    </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p><strong>Alumno:</strong> Jesus Aristeo Arenas Facio</p>
+                <p><strong>Grupo:</strong> 803-A</p>
+                <p><strong>Matricula:</strong> 226w0087</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
